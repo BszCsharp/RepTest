@@ -26,7 +26,8 @@ namespace DataAccess.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Vertretung.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Schule\\fi11csharp\\1aJahr2018_19\\W" +
+            "PF\\VertretungsplanMVVM\\StdpalnView\\bin\\Debug\\Vertretung.mdb")]
         public string ConString {
             get {
                 return ((string)(this["ConString"]));
