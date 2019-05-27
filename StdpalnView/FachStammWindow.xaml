@@ -1,0 +1,39 @@
+﻿<Window x:Class="StdpalnView.FachStammWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StdpalnView"
+        mc:Ignorable="d" 
+        xmlns:vm="clr-namespace:StdplanMVVM;assembly=StdplanMVVM"      
+        Title="Stammdaten Fach" Height="350" Width="834">
+    <Window.Resources>
+        <vm:VMFach  x:Key="NeuesFach" x:Name="NeuesFach" ></vm:VMFach>
+    </Window.Resources>
+    <Window.DataContext>
+        <vm:VMFachStamm></vm:VMFachStamm>
+    </Window.DataContext>
+   
+    <Grid Margin="0,0,13,127">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ComboBox Name="comboFaecher" ItemsSource="{Binding Path=Faecherliste}" Grid.ColumnSpan="2"></ComboBox>
+        
+        <TextBlock Text="Neues Fach:Bezeichnung" Grid.Row="1"/>
+        <TextBox Name="textBoxBezeichnung" Text="{Binding Source={StaticResource NeuesFach} ,Path=Bezeichnung}" Grid.Row="1" Grid.Column="1"></TextBox>
+        <!--
+        <Button Grid.Row="2" Content="Neues Fach hinzufügen" Command="{Binding ButtonAdd}" CommandParameter="{Binding ElementName=textBoxBezeichnung, Path=Text}" Style="{StaticResource mainButton}"/>
+        
+        -->
+        <Button Grid.Row="2" Content="Neues Fach hinzufügen" Command="{Binding ButtonAdd}" CommandParameter="{Binding Source={StaticResource NeuesFach}}" Style="{StaticResource mainButton}"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="StdpalnView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StdpalnView"
+        xmlns:props="clr-namespace:StdpalnView.Properties"
+        mc:Ignorable="d"
+       
+        Title="Vertretungsplan MyPlan" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Source="{Binding Source={x:Static props:Settings.Default},Path=ImageSource }" Stretch="Fill"  />
+        <Button Content="FachStamm" Grid.Column="0" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonFachStamm" Click="ButtonFachStammClick"/>
+        <Button Content="KlasseStamm" Grid.Column="1" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonKlasseStamm" ></Button>
+        <Button Content="LehrerStamm" Grid.Column="2" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonLehrerStamm" ></Button>
+        <Button Content="Vertretung" Grid.Column="3" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonVetretung"></Button>
+    </Grid>
+</Window>

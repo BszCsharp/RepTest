@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="StdpalnView.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImageSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Schule\fi11csharp\1aJahr2018_19\WPF\StundenplanMVVM\StdpalnView\bin\Debug\plan.png</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
