@@ -23,6 +23,6 @@
         <Button Content="FachStamm" Grid.Column="0" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonFachStamm" Click="ButtonFachStammClick"/>
         <Button Content="KlasseStamm" Grid.Column="1" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonKlasseStamm" ></Button>
         <Button Content="LehrerStamm" Grid.Column="2" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonLehrerStamm" ></Button>
-        <Button Content="Vertretung" Grid.Column="3" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonVetretung"></Button>
+        <Button Content="Vertretung verwalten" Grid.Column="3" Grid.Row="1" Style="{StaticResource mainButton}" Name="ButtonVetretung"></Button>
     </Grid>
 </Window>
